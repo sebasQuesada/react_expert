@@ -1,4 +1,4 @@
-export const heroes = [
+const heroes = [
     {
         id: 1,
         name: 'Batman',
@@ -25,3 +25,14 @@ export const heroes = [
         owner: 'Marvel'
     },
 ];
+// aqui exportamos un objeto independiente
+export const owners =['DC','MARVEL']
+// aqui exportamos el objeto principal
+export default heroes;
+
+// otra manera de exportar las 2 o varias 
+// export{
+//     heroes as default,
+//     owners
+// }
+
